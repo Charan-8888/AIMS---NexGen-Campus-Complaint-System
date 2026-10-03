@@ -283,7 +283,7 @@ const seed = async () => {
 
     // ── Users: Admin ───────────────────────────────────────────────
     console.log('👤  Creating users...');
-    const adminPwd = await hashPwd('Admin@12345');
+    const adminPwd = 'Admin@12345';
     const admin = await User.create({
       name: 'Dr. Rajesh Kumar',
       email: 'admin@nexgen.edu',
@@ -296,7 +296,7 @@ const seed = async () => {
     });
 
     // ── Managers ────────────────────────────────────────────────────
-    const managerPwd = await hashPwd('Manager@12345');
+    const managerPwd = 'Manager@12345';
     const managers = [];
     const managerData = [
       { name: 'Priya Sharma', email: 'manager.elec@nexgen.edu', dept: 'Electrical Maintenance', deptCode: 'ELEC' },
@@ -321,7 +321,7 @@ const seed = async () => {
     }
 
     // ── Staff ───────────────────────────────────────────────────────
-    const staffPwd = await hashPwd('Staff@12345');
+    const staffPwd = 'Staff@12345';
     const staffUsers = [];
     const staffData = [
       { name: 'Ramesh Electrician', email: 'staff.ramesh@nexgen.edu', dept: 'Electrical Maintenance', deptCode: 'ELEC', skills: ['electrical', 'wiring', 'switchgear'] },
@@ -361,7 +361,7 @@ const seed = async () => {
     }
 
     // ── Students ────────────────────────────────────────────────────
-    const userPwd = await hashPwd('User@12345');
+    const userPwd = 'User@12345';
     const students = [];
     const studentData = [
       { name: 'Aditya Reddy', email: 'aditya@student.nexgen.edu', id: 'NGU22CS001' },

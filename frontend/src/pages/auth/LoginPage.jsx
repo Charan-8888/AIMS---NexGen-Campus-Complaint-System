@@ -58,7 +58,6 @@ const LoginPage = () => {
     }}>
       {/* Left panel — branding */}
       <div style={{
-        display: 'none',
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'center',

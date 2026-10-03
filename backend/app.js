@@ -74,6 +74,15 @@ if (env.NODE_ENV !== 'test') {
 
 // ─── Routes ───────────────────────────────────────────────────────────────
 
+// Base route (Welcome)
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Welcome to AIMS-Campus API. The server is running successfully.',
+    version: '1.0.0'
+  });
+});
+
 // Health check (no auth)
 app.get('/health', (req, res) => {
   res.json({

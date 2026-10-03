@@ -249,7 +249,7 @@ const getStaffWorkload = async (departmentId = null) => {
         as: 'dept',
       },
     },
-    { $unwind: { path: '$dept', preserveNullAndEmpty: true } },
+    { $unwind: { path: '$dept', preserveNullAndEmptyArrays: true } },
     {
       $project: {
         _id: 0,
